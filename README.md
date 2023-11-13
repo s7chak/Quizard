@@ -47,7 +47,7 @@ Quizard is an interactive interface with OpenAI's Language Model (LLM) designed 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/quizard.git
+   git clone https://github.com/s7chak/quizard.git
    ```
 
 2. Navigate to the project directory:
@@ -82,6 +82,42 @@ Quizard is an interactive interface with OpenAI's Language Model (LLM) designed 
 
 - Ensure that the required dependencies are installed before running the app.
 - Adjust the port number (default is 8050) based on your preferences.
+- The prompt used to generate this quiz:
+
+```
+Design a quiz using the context provided with {} multiple-choice questions. 
+Please make sure to include 4 answer options (a, b, c, d) for each question. 
+The difficulty levels should be distributed as follows:
+- {} questions of low difficulty
+- {} questions of medium difficulty
+- {} questions of high or hard difficulty
+
+Quiz Title: [Your Quiz Title]
+
+Question 1: [Your Question Here]
+a. [Option a]
+b. [Option b]
+c. [Option c]
+d. [Option d]
+Correct Answer: [Correct Option]
+
+Question 2: [Your Question Here]
+a. [Option a]
+b. [Option b]
+c. [Option c]
+d. [Option d]
+Correct Answer: [Correct Option]
+
+...
+
+
+Please follow this exact format since I will be parsing your quiz programmatically.
+
+```
+
+
+
+
 
 ## License
 
