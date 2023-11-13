@@ -1,0 +1,4 @@
+{
+  "quiz_prompt": "Design a quiz using the context provided with {} multiple-choice questions. \nPlease make sure to include 4 answer options (a, b, c, d) for each question. \nThe difficulty levels should be distributed as follows:\n- {} questions of low difficulty\n- {} questions of medium difficulty\n- {} questions of high or hard difficulty\n\nQuiz Title: [Your Quiz Title]\n\nQuestion 1: [Your Question Here]\na. [Option a]\nb. [Option b]\nc. [Option c]\nd. [Option d]\nCorrect Answer: [Correct Option]\n\nQuestion 2: [Your Question Here]\na. [Option a]\nb. [Option b]\nc. [Option c]\nd. [Option d]\nCorrect Answer: [Correct Option]\n\n...\n\nQuestion 20: [Your Question Here]\na. [Option a]\nb. [Option b]\nc. [Option c]\nd. [Option d]\nCorrect Answer: [Correct Option letter]. Please follow this exact format since I will be parsing your quiz programmatically."
+
+}
