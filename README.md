@@ -70,7 +70,7 @@ Quizard is an interactive interface with OpenAI's Language Model (LLM) designed 
    python app.py
    ```
 
-2. Open your web browser and visit [http://localhost:8050](http://localhost:8050).
+2. Open your web browser and visit [http://localhost:8050/home](http://localhost:8050).
 
 3. Use the UI to upload documents (links, PDFs, Word documents).
 
