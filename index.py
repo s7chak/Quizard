@@ -21,19 +21,22 @@ navbar = dbc.Navbar(
     dbc.Container(
         [
             dbc.Row(
-            [
-                html.A(
-                    dbc.Col(html.Img(src=r"assets/logo.jpeg", height="40px", width="40px", style={'display': 'inline-block', 'verticalAlign': 'middle'})),
-                    href="/home",
-                ),
-                html.H3("Quizard", style={'display': 'inline-block', 'verticalAlign': 'middle'}),
-            ],
-                # style={'display':'flex', 'alignItems': 'center'}
+                [
+                    html.A(
+                        dbc.Col(html.Img(src=r"assets/logo.png", height="40px", width="40px")),
+                        href="/home",
+                        style={"marginRight": "10px", "width": "30px"}
+                    ),
+                    dbc.Col(html.H3("Quizard", style={"margin": "10px"})),
+                ],
+                align="center",
+                style={"width":"100vw"}
             ),
-        ]),
-        color="dark",
-        dark=True,
-        className="mb-4",
+        ]
+    ),
+    color="dark",
+    dark=True,
+    className="mb-4",
 )
 
 def toggle_navbar_collapse(n, is_open):

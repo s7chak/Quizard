@@ -24,7 +24,7 @@ def serve_layout():
     layout = html.Div([
         dbc.Container([
             html.P(),
-            dbc.Col(html.H4(children="Train Quiz Agent", className="mb-2")),
+            dbc.Col(html.H4(children="Train Agent", className="mb-2")),
             html.P(),
             html.Div(id='read_status'),
             html.Div(id='process_status'),
@@ -38,6 +38,7 @@ def serve_layout():
                                     'height': '20%'
                                 })
                             ),
+                        dbc.Row(html.P(children="Add article links or filepaths to txt files", className="mb-2")),
                         ]
                     ),
                 ),
@@ -73,15 +74,17 @@ def serve_layout():
                     ]),
                 ),
             ]),
-            dbc.Col(dbc.Button("Submit", id='submit_button')),
+            dbc.Col(dbc.Button("Submit", id='submit_button', style={'marginBottom':'10px'})),
             dbc.Col(dbc.Button("Show Quiz", id='show_button')),
             html.Div([
                 dcc.Input(id='quiz_name', placeholder='Name Quiz', type='text', value='', debounce=True, style={
-                    'width': '20%',
-                    'height': '10%'
+                    'width': '30%',
+                    'height': '30%',
+                    'marginTop': '20px',
+                    'padding': '5px',
                 }),
                 dcc.Download(id='download_link'),
-                dbc.Button("Download", id='download_button')
+                dbc.Button("Download", id='download_button', style={'marginLeft':'10px'})
                 ]),
             dbc.Row(id='quiz-container'),
         ]),
