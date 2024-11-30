@@ -21,22 +21,6 @@ Quizard is an interactive interface with OpenAI's Language Model (LLM) designed 
 - Pandas
 - Matplotlib
 - Scipy
-- Plotly
-- Dash 2.10.2
-- Dash Bootstrap Components 1.4.1
-- Dash Extensions
-- Dash Iconify s0.1.2
-- XGBoost
-- Statsmodels 0.14.0
-- Scikit-learn 1.2.2
-- Yfinance
-- Yahoo_fin
-- Selenium
-- Dash Daq
-- Kaleido
-- Pillow
-- Dash
-- Dash Bootstrap Components
 - Python-docx
 - Chromadb
 - Unstructured
@@ -47,7 +31,7 @@ Quizard is an interactive interface with OpenAI's Language Model (LLM) designed 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/s7chak/quizard.git
+   git clone https://github.com/s7chak/quizardapi.git
    ```
 
 2. Navigate to the project directory:
